@@ -111,22 +111,54 @@
     display: none;
   }
 
-  /* RTL-aware margins and paddings */
-  [dir="rtl"] .mr-2 { @apply ml-2 mr-0; }
-  [dir="rtl"] .ml-2 { @apply mr-2 ml-0; }
-  [dir="rtl"] .mr-4 { @apply ml-4 mr-0; }
-  [dir="rtl"] .ml-4 { @apply mr-4 ml-0; }
-  [dir="rtl"] .mr-6 { @apply ml-6 mr-0; }
-  [dir="rtl"] .ml-6 { @apply mr-6 ml-0; }
+  /* RTL-aware margins and paddings using direct CSS values */
+  [dir="rtl"] .mr-2 { 
+    margin-right: 0 !important;
+    margin-left: 0.5rem !important;
+  }
+  [dir="rtl"] .ml-2 { 
+    margin-left: 0 !important;
+    margin-right: 0.5rem !important;
+  }
+  [dir="rtl"] .mr-4 { 
+    margin-right: 0 !important;
+    margin-left: 1rem !important;
+  }
+  [dir="rtl"] .ml-4 { 
+    margin-left: 0 !important;
+    margin-right: 1rem !important;
+  }
+  [dir="rtl"] .mr-6 { 
+    margin-right: 0 !important;
+    margin-left: 1.5rem !important;
+  }
+  [dir="rtl"] .ml-6 { 
+    margin-left: 0 !important;
+    margin-right: 1.5rem !important;
+  }
   
-  /* RTL-aware positioning */
-  [dir="rtl"] .left-0 { @apply right-0 left-auto; }
-  [dir="rtl"] .right-0 { @apply left-0 right-auto; }
-  [dir="rtl"] .left-4 { @apply right-4 left-auto; }
-  [dir="rtl"] .right-4 { @apply left-4 right-auto; }
+  /* RTL-aware positioning using direct CSS values */
+  [dir="rtl"] .left-0 { 
+    left: auto !important;
+    right: 0 !important;
+  }
+  [dir="rtl"] .right-0 { 
+    right: auto !important;
+    left: 0 !important;
+  }
+  [dir="rtl"] .left-4 { 
+    left: auto !important;
+    right: 1rem !important;
+  }
+  [dir="rtl"] .right-4 { 
+    right: auto !important;
+    left: 1rem !important;
+  }
 
-  /* RTL-aware flexbox */
-  [dir="rtl"] .flex-row { @apply flex-row-reverse; }
+  /* RTL-aware flexbox using direct CSS values */
+  [dir="rtl"] .flex-row { 
+    flex-direction: row-reverse !important;
+  }
 
   /* RTL-aware transforms for animations */
   [dir="rtl"] .group-hover\\:-rotate-2 { transform: rotate(2deg); }
