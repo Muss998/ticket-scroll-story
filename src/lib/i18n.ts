@@ -141,8 +141,83 @@ const resources = {
       privacyPolicy: 'Política de Privacidad',
       termsOfService: 'Términos de Servicio',
     }
+  },
+  ar: {
+    translation: {
+      // Navigation
+      features: 'المميزات',
+      screenshots: 'لقطات الشاشة',
+      download: 'تحميل',
+      contact: 'اتصل بنا',
+      join: 'انضم إلينا',
+      
+      // Hero Section
+      heroTitle: 'احجز بسهولة',
+      heroSubtitle: 'وبساطة',
+      heroDescription: 'اكتشف مستقبل إدارة الحجوزات مع تذكرة. احجز وأدر وتتبع جميع حجوزاتك في تطبيق واحد جميل وبديهي.',
+      downloadNow: 'حمل الآن',
+      learnMore: 'اعرف أكثر',
+      
+      // Features Section
+      featuresTitle: 'مميزات قوية',
+      featuresSubtitle: 'كل ما تحتاجه لإدارة الحجوزات بسهولة',
+      
+      feature1Title: 'حجز فوري',
+      feature1Description: 'احجز على الفور مع توفر في الوقت الفعلي والتأكيد.',
+      
+      feature2Title: 'إشعارات ذكية',
+      feature2Description: 'لا تفوت أي حجز مع الإشعارات الذكية والتذكيرات.',
+      
+      feature3Title: 'متعدد المنصات',
+      feature3Description: 'الوصول إلى حجوزاتك في أي مكان وفي أي وقت على جميع أجهزتك.',
+      
+      feature4Title: 'لوحة التحليلات',
+      feature4Description: 'تتبع أنماط الحجز واحصل على رؤى لتحسين جدولك.',
+      
+      feature5Title: 'مدفوعات آمنة',
+      feature5Description: 'معالجة المدفوعات بأمان مع التشفير والحماية الرائدة في الصناعة.',
+      
+      feature6Title: 'دعم 24/7',
+      feature6Description: 'احصل على المساعدة عندما تحتاجها مع فريق دعم العملاء المتخصص.',
+      
+      // Screenshots Section
+      screenshotsTitle: 'شاهد تذكرة في العمل',
+      screenshotsSubtitle: 'واجهة جميلة وبديهية مصممة للكفاءة',
+      
+      // Download Section
+      downloadTitle: 'ابدأ اليوم',
+      downloadSubtitle: 'حمل تذكرة وثور طريقة التعامل مع الحجوزات',
+      availableOn: 'متاح على',
+      
+      // Contact Section
+      contactTitle: 'تواصل معنا',
+      contactSubtitle: 'لديك أسئلة؟ نحن هنا للمساعدة.',
+      
+      contactEmail: 'البريد الإلكتروني',
+      contactPhone: 'الهاتف',
+      contactAddress: 'العنوان',
+      
+      contactEmailValue: 'hello@ticketapp.com',
+      contactPhoneValue: '+1 (555) 123-4567',
+      contactAddressValue: 'سان فرانسيسكو، كاليفورنيا',
+      
+      // Join Section
+      joinTitle: 'انضم إلى مجتمعنا',
+      joinSubtitle: 'كن جزءًا من ثورة الحجوزات. انضم إلى آلاف المستخدمين الراضين.',
+      joinButton: 'انضم الآن',
+      
+      // Footer
+      allRightsReserved: 'جميع الحقوق محفوظة.',
+      privacyPolicy: 'سياسة الخصوصية',
+      termsOfService: 'شروط الخدمة',
+    }
   }
 };
+
+// RTL languages configuration
+export const RTL_LANGUAGES = ['ar', 'he', 'fa', 'ur'];
+
+export const isRTL = (language: string) => RTL_LANGUAGES.includes(language);
 
 i18n
   .use(initReactI18next)

@@ -97,6 +97,39 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* RTL Support */
+  [dir="rtl"] {
+    text-align: right;
+  }
+
+  [dir="rtl"] .ltr-only {
+    display: none;
+  }
+
+  [dir="ltr"] .rtl-only {
+    display: none;
+  }
+
+  /* RTL-aware margins and paddings */
+  [dir="rtl"] .mr-2 { @apply ml-2 mr-0; }
+  [dir="rtl"] .ml-2 { @apply mr-2 ml-0; }
+  [dir="rtl"] .mr-4 { @apply ml-4 mr-0; }
+  [dir="rtl"] .ml-4 { @apply mr-4 ml-0; }
+  [dir="rtl"] .mr-6 { @apply ml-6 mr-0; }
+  [dir="rtl"] .ml-6 { @apply mr-6 ml-0; }
+  
+  /* RTL-aware positioning */
+  [dir="rtl"] .left-0 { @apply right-0 left-auto; }
+  [dir="rtl"] .right-0 { @apply left-0 right-auto; }
+  [dir="rtl"] .left-4 { @apply right-4 left-auto; }
+  [dir="rtl"] .right-4 { @apply left-4 right-auto; }
+
+  /* RTL-aware flexbox */
+  [dir="rtl"] .flex-row { @apply flex-row-reverse; }
+
+  /* RTL-aware transforms for animations */
+  [dir="rtl"] .group-hover\\:-rotate-2 { transform: rotate(2deg); }
 }
 
 @layer components {
