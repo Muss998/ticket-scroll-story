@@ -53,26 +53,28 @@ export function ScreenshotsSection() {
         }
       );
 
-      // Screenshots animation
+      // Screenshots animation - individual triggers for sequential reveal
       const screenshots = screenshotsRef.current?.children;
       if (screenshots) {
-        gsap.fromTo(screenshots,
-          { y: 100, opacity: 0, rotationY: 45 },
-          {
-            y: 0,
-            opacity: 1,
-            rotationY: 0,
-            duration: 1,
-            stagger: 0.3,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: screenshotsRef.current,
-              start: 'top 80%',
-              end: 'bottom 20%',
-              toggleActions: 'play none none reverse'
+        Array.from(screenshots).forEach((screenshot, index) => {
+          gsap.fromTo(screenshot,
+            { y: 100, opacity: 0, rotationY: 45, scale: 0.8 },
+            {
+              y: 0,
+              opacity: 1,
+              rotationY: 0,
+              scale: 1,
+              duration: 1.2,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: screenshot,
+                start: 'top 90%',
+                end: 'bottom 60%',
+                toggleActions: 'play none none reverse'
+              }
             }
-          }
-        );
+          );
+        });
       }
     }, sectionRef);
 
