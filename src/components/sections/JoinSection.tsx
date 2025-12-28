@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Users, Star, TrendingUp, Heart } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useTranslation } from 'react-i18next';
@@ -13,24 +13,21 @@ export function JoinSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const stats = [
+  const reasons = [
     {
-      icon: Users,
-      number: '50K+',
-      label: 'Active Users',
-      color: 'text-blue-500'
+      emoji: '⚡',
+      titleKey: 'joinReasonFastTitle',
+      descriptionKey: 'joinReasonFastDescription'
     },
     {
-      icon: Star,
-      number: '4.9',
-      label: 'App Store Rating',
-      color: 'text-yellow-500'
+      emoji: '🔔',
+      titleKey: 'joinReasonRemindersTitle',
+      descriptionKey: 'joinReasonRemindersDescription'
     },
     {
-      icon: TrendingUp,
-      number: '1M+',
-      label: 'Bookings Made',
-      color: 'text-green-500'
+      emoji: '🧾',
+      titleKey: 'joinReasonUnifiedTitle',
+      descriptionKey: 'joinReasonUnifiedDescription'
     }
   ];
 
@@ -97,33 +94,28 @@ export function JoinSection() {
             </p>
           </div>
 
-          {/* Stats */}
+          {/* Reasons */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {stats.map((stat, index) => {
-              const IconComponent = stat.icon;
-              return (
-                <Card key={index} className="stat-card group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-card/50 backdrop-blur-sm">
-                  <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-primary p-4 shadow-glow group-hover:scale-110 transition-transform">
-                      <IconComponent className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="text-3xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      {stat.number}
-                    </div>
-                    <div className="text-muted-foreground font-medium">
-                      {stat.label}
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+            {reasons.map((reason, index) => (
+              <Card key={index} className="stat-card group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-card/50 backdrop-blur-sm">
+                <CardContent className="p-8 text-center space-y-4">
+                  <div className="text-5xl" aria-hidden="true">{reason.emoji}</div>
+                  <div>
+                    <p className="text-2xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {t(reason.titleKey)}
+                    </p>
+                    <p className="text-muted-foreground text-lg">{t(reason.descriptionKey)}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
           {/* CTA */}
           <div className="space-y-8">
             <div className="flex items-center justify-center space-x-2 text-lg text-muted-foreground">
               <Heart className="h-5 w-5 text-primary" />
-              <span>Loved by professionals worldwide</span>
+              <span>{t('joinSatisfaction')}</span>
             </div>
 
             <Button 
@@ -134,8 +126,7 @@ export function JoinSection() {
             </Button>
 
             <p className="text-sm text-muted-foreground max-w-md mx-auto">
-              Join our growing community of users who trust TekaTicket for their reservation needs. 
-              No commitments, cancel anytime.
+              {t('joinNoCreditCard')}
             </p>
           </div>
         </div>

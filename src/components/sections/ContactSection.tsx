@@ -61,6 +61,8 @@ export function ContactSection() {
     }
   ];
 
+  const socialPlatforms = ['contactSocialTwitter', 'contactSocialLinkedIn', 'contactSocialInstagram'] as const;
+
   return (
     <section id="contact" ref={sectionRef} className="py-24 bg-gradient-to-br from-primary/5 to-background relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
@@ -78,7 +80,7 @@ export function ContactSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-semibold mb-8 text-foreground">Get in Touch</h3>
+              <h3 className="text-2xl font-semibold mb-8 text-foreground">{t('contactInfoHeading')}</h3>
               
               {contactInfo.map((info, index) => {
                 const IconComponent = info.icon;
@@ -98,11 +100,11 @@ export function ContactSection() {
               })}
 
               <div className="pt-8">
-                <h4 className="text-xl font-semibold mb-4 text-foreground">Follow Us</h4>
+                <h4 className="text-xl font-semibold mb-4 text-foreground">{t('contactFollowHeading')}</h4>
                 <div className="flex space-x-4">
-                  {['Twitter', 'LinkedIn', 'Instagram'].map((social) => (
-                    <Button key={social} variant="outline" size="sm" className="hover:bg-primary hover:text-primary-foreground">
-                      {social}
+                  {socialPlatforms.map((socialKey) => (
+                    <Button key={socialKey} variant="outline" size="sm" className="hover:bg-primary hover:text-primary-foreground">
+                      {t(socialKey)}
                     </Button>
                   ))}
                 </div>
@@ -112,29 +114,29 @@ export function ContactSection() {
             {/* Contact Form */}
             <Card className="bg-card/50 backdrop-blur-sm shadow-elegant">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-8 text-foreground">Send us a Message</h3>
+                <h3 className="text-2xl font-semibold mb-8 text-foreground">{t('contactFormHeading')}</h3>
                 
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">Name</label>
-                      <Input placeholder="Your name" className="bg-background/50" />
+                      <label className="block text-sm font-medium text-foreground mb-2">{t('contactFormNameLabel')}</label>
+                      <Input placeholder={t('contactFormNamePlaceholder')} className="bg-background/50" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">Email</label>
-                      <Input type="email" placeholder="your.email@example.com" className="bg-background/50" />
+                      <label className="block text-sm font-medium text-foreground mb-2">{t('contactFormEmailLabel')}</label>
+                      <Input type="email" placeholder={t('contactFormEmailPlaceholder')} className="bg-background/50" />
                     </div>
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Subject</label>
-                    <Input placeholder="How can we help?" className="bg-background/50" />
+                    <label className="block text-sm font-medium text-foreground mb-2">{t('contactFormSubjectLabel')}</label>
+                    <Input placeholder={t('contactFormSubjectPlaceholder')} className="bg-background/50" />
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Message</label>
+                    <label className="block text-sm font-medium text-foreground mb-2">{t('contactFormMessageLabel')}</label>
                     <Textarea 
-                      placeholder="Tell us more about your inquiry..."
+                      placeholder={t('contactFormMessagePlaceholder')}
                       rows={6}
                       className="bg-background/50 resize-none"
                     />
@@ -145,7 +147,7 @@ export function ContactSection() {
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3"
                   >
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    {t('contactFormButton')}
                   </Button>
                 </form>
               </CardContent>

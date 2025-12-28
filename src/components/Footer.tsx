@@ -20,29 +20,29 @@ export function Footer() {
               <span className="text-xl font-bold text-gradient-primary">TekaTicket</span>
             </div>
             <p className="text-muted-foreground max-w-md">
-              The future of reservation management. Make booking seamless, efficient, and beautiful.
+              {t('footerDescription')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t('footerQuickLinks')}</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#screenshots" className="hover:text-primary transition-colors">Screenshots</a></li>
-              <li><a href="#download" className="hover:text-primary transition-colors">Download</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Contact</a></li>
+              <li><a href="#features" className="hover:text-primary transition-colors">{t('features')}</a></li>
+              <li><a href="#screenshots" className="hover:text-primary transition-colors">{t('screenshots')}</a></li>
+              <li><a href="#download" className="hover:text-primary transition-colors">{t('download')}</a></li>
+              <li><a href="#contact" className="hover:text-primary transition-colors">{t('contact')}</a></li>
             </ul>
           </div>
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Legal</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t('footerLegal')}</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">{t('privacyPolicy')}</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">{t('termsOfService')}</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Support</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">{t('footerCookiePolicy')}</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">{t('footerSupport')}</a></li>
             </ul>
           </div>
         </div>
@@ -55,9 +55,9 @@ export function Footer() {
           </div>
           
           <div className="flex items-center space-x-2 text-muted-foreground">
-            <span>Made with</span>
+            <span>{t('footerMadeWith')}</span>
             <Heart className="h-4 w-4 text-primary fill-current" />
-            <span>for better reservations</span>
+            <span>{t('footerForReservations')}</span>
           </div>
         </div>
       </div>

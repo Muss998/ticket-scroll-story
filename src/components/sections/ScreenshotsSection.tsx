@@ -20,32 +20,32 @@ export function ScreenshotsSection() {
     {
       src: S1,
       alt: 'Home Screen',
-      title: 'Find your best places',
-      description: 'Search filter and venues to discover top tailored to your preferences. Find your best places easily. New venues types coming soon.'
+      titleKey: 'screenshotsCard1Title',
+      descriptionKey: 'screenshotsCard1Description'
     },
     {
       src: S2,
       alt: 'Place Screen',
-      title: 'View Place Details',
-      description: 'See photos, video, location, and more details to make informed decisions about where to reserve and go.'
+      titleKey: 'screenshotsCard2Title',
+      descriptionKey: 'screenshotsCard2Description'
     },
     {
       src: S3,
       alt: 'Place Screen',
-      title: 'Reviews & Preferences',
-      description: 'Read reviews from other users to help you decide with authentic feedback. You can add your own reviews too.'
+      titleKey: 'screenshotsCard3Title',
+      descriptionKey: 'screenshotsCard3Description'
     },
     {
       src: S4,
       alt: 'Payment Screen',
-      title: 'Reservation Completion',
-      description: 'Enter your reservation details, coupons and confirm your booking in just a few taps.'
+      titleKey: 'screenshotsCard4Title',
+      descriptionKey: 'screenshotsCard4Description'
     },
     {
       src: S5,
       alt: 'Support Screen',
-      title: '24/7 Support',
-      description: 'Our support team is available around the clock to assist you with any inquiries or issues, and our AI chatbot provides instant answers to common questions when you need help fast.'
+      titleKey: 'screenshotsCard5Title',
+      descriptionKey: 'screenshotsCard5Description'
     }
   ];
 
@@ -181,12 +181,12 @@ export function ScreenshotsSection() {
                     </div>
 
                     <div className="w-full text-left space-y-3">
-                      <p className="text-sm uppercase tracking-wide text-primary/80">{t('insideApp', { defaultValue: 'Inside the app' })}</p>
+                      <p className="text-sm uppercase tracking-wide text-primary/80">{t('insideApp')}</p>
                       <h3 className="text-2xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                        {screenshot.title}
+                        {t(screenshot.titleKey)}
                       </h3>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                        {screenshot.description}
+                        {t(screenshot.descriptionKey)}
                       </p>
                     </div>
                   </div>

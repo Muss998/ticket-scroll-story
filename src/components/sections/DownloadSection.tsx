@@ -58,9 +58,9 @@ export function DownloadSection() {
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-primary p-4 shadow-glow group-hover:scale-110 transition-transform">
                   <Apple className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">iOS App</h3>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">{t('downloadIOSHeading')}</h3>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  Download for iPhone
+                  {t('downloadIOSButton')}
                 </Button>
               </CardContent>
             </Card>
@@ -71,9 +71,9 @@ export function DownloadSection() {
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-primary p-4 shadow-glow group-hover:scale-110 transition-transform">
                   <Play className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Android App</h3>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">{t('downloadAndroidHeading')}</h3>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  Download for Android
+                  {t('downloadAndroidButton')}
                 </Button>
               </CardContent>
             </Card>
@@ -84,11 +84,11 @@ export function DownloadSection() {
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-primary p-4 shadow-glow group-hover:scale-110 transition-transform">
                   <QrCode className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Scan QR Code</h3>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">{t('downloadQRHeading')}</h3>
                 <div className="w-24 h-24 mx-auto bg-white rounded-lg flex items-center justify-center mb-4">
                   <QrCode className="w-16 h-16 text-black" />
                 </div>
-                <p className="text-sm text-muted-foreground">Scan to download</p>
+                <p className="text-sm text-muted-foreground">{t('downloadQRInstruction')}</p>
               </CardContent>
             </Card>
           </div>
