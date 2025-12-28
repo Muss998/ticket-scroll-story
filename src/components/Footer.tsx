@@ -1,5 +1,6 @@
 import { Heart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -39,8 +40,8 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-foreground mb-4">{t('footerLegal')}</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">{t('privacyPolicy')}</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">{t('termsOfService')}</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-primary transition-colors">{t('privacyPolicy')}</Link></li>
+              <li><Link to="/terms" className="hover:text-primary transition-colors">{t('termsOfService')}</Link></li>
               <li><a href="#" className="hover:text-primary transition-colors">{t('footerCookiePolicy')}</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">{t('footerSupport')}</a></li>
             </ul>
