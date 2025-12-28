@@ -42,7 +42,7 @@ export function Footer() {
             <ul className="space-y-2 text-muted-foreground">
               <li><Link to="/privacy-policy" className="hover:text-primary transition-colors">{t('privacyPolicy')}</Link></li>
               <li><Link to="/terms" className="hover:text-primary transition-colors">{t('termsOfService')}</Link></li>
-              <li><a href="#" className="hover:text-primary transition-colors">{t('footerCookiePolicy')}</a></li>
+              {/* <li><a href="#" className="hover:text-primary transition-colors">{t('footerCookiePolicy')}</a></li> */}
               <li><a href="#" className="hover:text-primary transition-colors">{t('footerSupport')}</a></li>
             </ul>
           </div>
