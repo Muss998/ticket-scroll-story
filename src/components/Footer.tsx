@@ -13,11 +13,11 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/907bef8c-8685-4b00-af6b-e7c387d1991e.png" 
-                alt="Ticket Logo" 
+                src="/images/logo.png" 
+                alt="TekaTicket Logo" 
                 className="h-8 w-8 rounded-full" 
               />
-              <span className="text-xl font-bold text-gradient-primary">Ticket</span>
+              <span className="text-xl font-bold text-gradient-primary">TekaTicket</span>
             </div>
             <p className="text-muted-foreground max-w-md">
               The future of reservation management. Make booking seamless, efficient, and beautiful.
@@ -50,7 +50,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2 text-muted-foreground">
-            <span>© {currentYear} Ticket.</span>
+            <span>© {currentYear} TekaTicket.</span>
             <span>{t('allRightsReserved')}</span>
           </div>
           

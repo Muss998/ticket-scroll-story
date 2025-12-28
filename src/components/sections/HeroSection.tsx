@@ -75,18 +75,18 @@ export function HeroSection() {
           <div className="mb-8">
             <img 
               ref={logoRef}
-              src="/lovable-uploads/907bef8c-8685-4b00-af6b-e7c387d1991e.png" 
-              alt="Ticket Logo" 
-              className="h-24 w-24 mx-auto rounded-full shadow-glow" 
+              src="/images/logo.png" 
+              alt="TekaTicket Logo" 
+              className="h-48 w-48 mt-24 mx-auto rounded-full shadow-glow" 
             />
           </div>
 
           {/* Main heading */}
-          <h1 ref={titleRef} className="text-6xl md:text-8xl font-bold mb-4">
+          <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold mb-4">
             <span className="text-gradient-primary">{t('heroTitle')}</span>
           </h1>
           
-          <h2 ref={subtitleRef} className="text-5xl md:text-7xl font-bold text-foreground mb-8">
+          <h2 ref={subtitleRef} className="text-4xl md:text-6xl font-bold text-foreground mb-8">
             {t('heroSubtitle')}
           </h2>
 

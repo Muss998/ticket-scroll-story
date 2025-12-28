@@ -5,7 +5,6 @@ import { useState, useRef, useEffect } from 'react';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
   { code: 'ar', name: 'العربية', flag: '🇸🇦' }
 ];
 
@@ -41,7 +40,6 @@ export function LanguageToggle() {
         className="h-10 px-3 rounded-full hover:bg-primary/10 transition-colors font-medium"
       >
         <Globe className="h-4 w-4 mr-2" />
-        <span className="mr-1">{currentLang.flag}</span>
         {currentLang.code.toUpperCase()}
       </Button>
       
@@ -55,7 +53,7 @@ export function LanguageToggle() {
                 i18n.language === lang.code ? 'bg-primary/5 text-primary' : 'text-foreground'
               }`}
             >
-              <span className="text-lg">{lang.flag}</span>
+              {/* <span className="text-lg">{lang.flag}</span> */}
               <span>{lang.name}</span>
             </button>
           ))}

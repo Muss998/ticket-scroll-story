@@ -134,7 +134,7 @@ export function JoinSection() {
             </Button>
 
             <p className="text-sm text-muted-foreground max-w-md mx-auto">
-              Join our growing community of users who trust Ticket for their reservation needs. 
+              Join our growing community of users who trust TekaTicket for their reservation needs. 
               No commitments, cancel anytime.
             </p>
           </div>

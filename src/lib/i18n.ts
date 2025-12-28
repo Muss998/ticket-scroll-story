@@ -14,7 +14,7 @@ const resources = {
       // Hero Section
       heroTitle: 'Make Reservations',
       heroSubtitle: 'Seamlessly',
-      heroDescription: 'Experience the future of reservation management with Ticket. Book, manage, and track all your reservations in one beautiful, intuitive app.',
+      heroDescription: 'Experience the future of reservation management with TekaTicket. Book, manage, and track all your reservations in one beautiful, intuitive app.',
       downloadNow: 'Download Now',
       learnMore: 'Learn More',
       
@@ -41,12 +41,12 @@ const resources = {
       feature6Description: 'Get help whenever you need it with our dedicated customer support team.',
       
       // Screenshots Section
-      screenshotsTitle: 'See Ticket in Action',
+      screenshotsTitle: 'See TekaTicket in Action',
       screenshotsSubtitle: 'Beautiful, intuitive interface designed for efficiency',
       
       // Download Section
       downloadTitle: 'Get Started Today',
-      downloadSubtitle: 'Download Ticket and revolutionize how you handle reservations',
+      downloadSubtitle: 'Download TekaTicket and revolutionize how you handle reservations',
       availableOn: 'Available on',
       
       // Contact Section
@@ -57,9 +57,9 @@ const resources = {
       contactPhone: 'Phone',
       contactAddress: 'Address',
       
-      contactEmailValue: 'hello@ticketapp.com',
+      contactEmailValue: 'hello@tekaticket.com',
       contactPhoneValue: '+1 (555) 123-4567',
-      contactAddressValue: 'San Francisco, CA',
+      contactAddressValue: 'Miami, FL, USA',
       
       // Join Section
       joinTitle: 'Join Our Community',
@@ -72,138 +72,68 @@ const resources = {
       termsOfService: 'Terms of Service',
     }
   },
-  es: {
-    translation: {
-      // Navigation
-      features: 'Características',
-      screenshots: 'Capturas',
-      download: 'Descargar',
-      contact: 'Contacto',
-      join: 'Únete',
-      
-      // Hero Section
-      heroTitle: 'Haz Reservaciones',
-      heroSubtitle: 'Sin Esfuerzo',
-      heroDescription: 'Experimenta el futuro de la gestión de reservaciones con Ticket. Reserva, gestiona y rastrea todas tus reservaciones en una app hermosa e intuitiva.',
-      downloadNow: 'Descargar Ahora',
-      learnMore: 'Saber Más',
-      
-      // Features Section
-      featuresTitle: 'Características Poderosas',
-      featuresSubtitle: 'Todo lo que necesitas para gestionar reservaciones sin esfuerzo',
-      
-      feature1Title: 'Reserva Instantánea',
-      feature1Description: 'Reserva instantáneamente con disponibilidad en tiempo real y confirmación.',
-      
-      feature2Title: 'Notificaciones Inteligentes',
-      feature2Description: 'Nunca pierdas una reserva con notificaciones push inteligentes y recordatorios.',
-      
-      feature3Title: 'Multi-Plataforma',
-      feature3Description: 'Accede a tus reservaciones en cualquier lugar, en cualquier momento, en todos tus dispositivos.',
-      
-      feature4Title: 'Panel de Analytics',
-      feature4Description: 'Rastrea tus patrones de reserva y obtén información para optimizar tu horario.',
-      
-      feature5Title: 'Pagos Seguros',
-      feature5Description: 'Procesa pagos de forma segura con encriptación y protección líder en la industria.',
-      
-      feature6Title: 'Soporte 24/7',
-      feature6Description: 'Obtén ayuda cuando la necesites con nuestro equipo de soporte al cliente dedicado.',
-      
-      // Screenshots Section
-      screenshotsTitle: 'Ve Ticket en Acción',
-      screenshotsSubtitle: 'Interfaz hermosa e intuitiva diseñada para la eficiencia',
-      
-      // Download Section
-      downloadTitle: 'Comienza Hoy',
-      downloadSubtitle: 'Descarga Ticket y revoluciona cómo manejas las reservaciones',
-      availableOn: 'Disponible en',
-      
-      // Contact Section
-      contactTitle: 'Ponte en Contacto',
-      contactSubtitle: '¿Tienes preguntas? Estamos aquí para ayudar.',
-      
-      contactEmail: 'Email',
-      contactPhone: 'Teléfono',
-      contactAddress: 'Dirección',
-      
-      contactEmailValue: 'hola@ticketapp.com',
-      contactPhoneValue: '+1 (555) 123-4567',
-      contactAddressValue: 'San Francisco, CA',
-      
-      // Join Section
-      joinTitle: 'Únete a Nuestra Comunidad',
-      joinSubtitle: 'Sé parte de la revolución de reservaciones. Únete a miles de usuarios satisfechos.',
-      joinButton: 'Únete Ahora',
-      
-      // Footer
-      allRightsReserved: 'Todos los derechos reservados.',
-      privacyPolicy: 'Política de Privacidad',
-      termsOfService: 'Términos de Servicio',
-    }
-  },
   ar: {
     translation: {
       // Navigation
-      features: 'المميزات',
+      features: 'الميزات',
       screenshots: 'لقطات الشاشة',
-      download: 'تحميل',
-      contact: 'اتصل بنا',
+      download: 'التنزيل',
+      contact: 'تواصل',
       join: 'انضم إلينا',
       
       // Hero Section
-      heroTitle: 'احجز بسهولة',
-      heroSubtitle: 'وبساطة',
-      heroDescription: 'اكتشف مستقبل إدارة الحجوزات مع تذكرة. احجز وأدر وتتبع جميع حجوزاتك في تطبيق واحد جميل وبديهي.',
-      downloadNow: 'حمل الآن',
-      learnMore: 'اعرف أكثر',
+      heroTitle: 'أنجز حجوزاتك',
+      heroSubtitle: 'بسلاسة',
+      heroDescription: 'اختبر مستقبل إدارة الحجوزات مع TekaTicket. احجز وأدر وتتبع كل حجوزاتك في تطبيق واحد جميل وسهل الاستخدام.',
+      downloadNow: 'حمّل الآن',
+      learnMore: 'اكتشف المزيد',
       
       // Features Section
-      featuresTitle: 'مميزات قوية',
+      featuresTitle: 'ميزات قوية',
       featuresSubtitle: 'كل ما تحتاجه لإدارة الحجوزات بسهولة',
       
-      feature1Title: 'حجز فوري',
-      feature1Description: 'احجز على الفور مع توفر في الوقت الفعلي والتأكيد.',
+      feature1Title: 'الحجز الفوري',
+      feature1Description: 'ثبّت حجزك فورًا مع توافر وتأكيد في الوقت الفعلي.',
       
       feature2Title: 'إشعارات ذكية',
-      feature2Description: 'لا تفوت أي حجز مع الإشعارات الذكية والتذكيرات.',
+      feature2Description: 'لا تفوت أي حجز بفضل الإشعارات الذكية والتنبيهات التذكيرية.',
       
-      feature3Title: 'متعدد المنصات',
-      feature3Description: 'الوصول إلى حجوزاتك في أي مكان وفي أي وقت على جميع أجهزتك.',
+      feature3Title: 'دعم متعدد المنصات',
+      feature3Description: 'يمكنك الوصول إلى حجوزاتك أينما كنت وعلى أي جهاز.',
       
-      feature4Title: 'لوحة التحليلات',
-      feature4Description: 'تتبع أنماط الحجز واحصل على رؤى لتحسين جدولك.',
+      feature4Title: 'لوحة تحليلات',
+      feature4Description: 'تابع سلوك الحجز واحصل على رؤى تساعدك على تحسين جدولك.',
       
       feature5Title: 'مدفوعات آمنة',
-      feature5Description: 'معالجة المدفوعات بأمان مع التشفير والحماية الرائدة في الصناعة.',
+      feature5Description: 'عالج المدفوعات بأمان باستخدام تشفير وحماية بمعايير عالمية.',
       
-      feature6Title: 'دعم 24/7',
-      feature6Description: 'احصل على المساعدة عندما تحتاجها مع فريق دعم العملاء المتخصص.',
+      feature6Title: 'دعم متواصل 24/7',
+      feature6Description: 'احصل على المساعدة وقتما احتجت إليها من فريق دعمنا المتخصص.',
       
       // Screenshots Section
-      screenshotsTitle: 'شاهد تذكرة في العمل',
-      screenshotsSubtitle: 'واجهة جميلة وبديهية مصممة للكفاءة',
+      screenshotsTitle: 'انظر كيف يعمل TekaTicket',
+      screenshotsSubtitle: 'واجهة جميلة وبديهية مصممة لتحقيق الكفاءة',
       
       // Download Section
       downloadTitle: 'ابدأ اليوم',
-      downloadSubtitle: 'حمل تذكرة وثور طريقة التعامل مع الحجوزات',
-      availableOn: 'متاح على',
+      downloadSubtitle: 'حمّل TekaTicket وغيّر طريقتك في إدارة الحجوزات',
+      availableOn: 'متوفر على',
       
       // Contact Section
       contactTitle: 'تواصل معنا',
-      contactSubtitle: 'لديك أسئلة؟ نحن هنا للمساعدة.',
+      contactSubtitle: 'هل لديك أسئلة؟ نحن هنا للمساعدة.',
       
       contactEmail: 'البريد الإلكتروني',
       contactPhone: 'الهاتف',
       contactAddress: 'العنوان',
       
-      contactEmailValue: 'hello@ticketapp.com',
+      contactEmailValue: 'hello@tekaticket.com',
       contactPhoneValue: '+1 (555) 123-4567',
-      contactAddressValue: 'سان فرانسيسكو، كاليفورنيا',
+      contactAddressValue: 'ميامي، فلوريدا، الولايات المتحدة الأمريكية',
       
       // Join Section
       joinTitle: 'انضم إلى مجتمعنا',
-      joinSubtitle: 'كن جزءًا من ثورة الحجوزات. انضم إلى آلاف المستخدمين الراضين.',
+      joinSubtitle: 'كن جزءًا من ثورة إدارة الحجوزات. انضم إلى آلاف المستخدمين الراضين.',
       joinButton: 'انضم الآن',
       
       // Footer

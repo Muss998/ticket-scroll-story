@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
-import { 
-  Zap, 
-  Bell, 
-  Smartphone, 
-  BarChart3, 
-  Shield, 
-  HeartHandshake 
+import {
+  Zap,
+  Bell,
+  Smartphone,
+  BarChart3,
+  Shield,
+  HeartHandshake
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useTranslation } from 'react-i18next';
@@ -107,12 +107,13 @@ export function FeaturesSection() {
     <section id="features" ref={sectionRef} className="py-24 bg-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div ref={titleRef} className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-gradient-primary">{t('featuresTitle')}</span>
           </h2>
+
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             {t('featuresSubtitle')}
           </p>
@@ -121,10 +122,10 @@ export function FeaturesSection() {
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
-            
+
             return (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30"
               >
                 <CardContent className="p-8 text-center">
@@ -133,11 +134,11 @@ export function FeaturesSection() {
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
                   </div>
-                  
+
                   <h3 className="text-xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                     {feature.title}
                   </h3>
-                  
+
                   <p className="text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
