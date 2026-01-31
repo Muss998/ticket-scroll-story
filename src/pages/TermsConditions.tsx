@@ -2,6 +2,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { Navigation } from '@/components/Navigation';
+import { Footer } from '@/components/Footer';
+import { useEffect } from 'react';
 
 const DEFINITION_KEYS = [
   'termsDefinitionsPlatform',
@@ -27,10 +30,16 @@ const REVIEW_KEYS = [
 ] as const;
 
 export default function TermsConditions() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+  
   const { t } = useTranslation();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-background to-primary/5 py-24">
+    <main className="min-h-screen bg-gradient-to-b from-background to-primary/5 py-24" style={{ paddingBottom: 0 }}>
+      <Navigation parentPage="PrivacyPolicy" />
+
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-sm uppercase tracking-wide text-primary mb-4">{t('legalLastUpdated')}</p>
@@ -77,7 +86,7 @@ export default function TermsConditions() {
           </Card>
         </div>
 
-        <div className="mt-12 text-center space-y-4">
+        <div className="mt-12 text-center space-y-4"  style={{ marginBottom: '2rem' }}>
           <p className="text-muted-foreground">
             {t('termsContactText', { email: t('contactEmailValue') })}
           </p>
@@ -86,6 +95,8 @@ export default function TermsConditions() {
           </Button>
         </div>
       </div>
+
+      <Footer />
     </main>
   );
 }

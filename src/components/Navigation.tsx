@@ -5,7 +5,7 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { useTranslation } from 'react-i18next';
 
-export function Navigation() {
+export function Navigation(parentPage = 'Home') {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation();
@@ -20,10 +20,15 @@ export function Navigation() {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
+    if (parentPage !== 'Home') {
+      window.location.href = window.location.origin + `#${sectionId}`;
+    } else {
+      const element = document.getElementById(sectionId);
+
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        setIsOpen(false);
+      }
     }
   };
 
@@ -36,19 +41,18 @@ export function Navigation() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-elegant' 
-        : 'bg-transparent'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+      ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-elegant'
+      : 'bg-transparent'
+      }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="/images/logo.png" 
-              alt="TekaTicket Logo" 
-              className="h-10 w-10 rounded-full glow-primary" 
+            <img
+              src="/images/logo.png"
+              alt="TekaTicket Logo"
+              className="h-10 w-10 rounded-full glow-primary"
             />
             <span className="text-2xl font-bold text-gradient-primary">TekaTicket</span>
           </div>
@@ -70,7 +74,7 @@ export function Navigation() {
           <div className="flex items-center space-x-3">
             <LanguageToggle />
             <ThemeToggle />
-            
+
             {/* Mobile menu button */}
             <Button
               variant="ghost"

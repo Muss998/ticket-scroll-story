@@ -2,6 +2,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { Navigation } from '@/components/Navigation';
+import { Footer } from '@/components/Footer';
+import { useEffect } from 'react';
 
 const DEFINITION_KEYS = [
   'privacyDefinitionsPlatform',
@@ -42,10 +45,16 @@ const RIGHTS_KEYS = [
 ] as const;
 
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const { t } = useTranslation();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-background to-primary/5 py-24">
+    <main className="min-h-screen bg-gradient-to-b from-background to-primary/5 py-24" style={{ paddingBottom: 0 }}>
+      <Navigation parentPage="PrivacyPolicy" />
+
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-sm uppercase tracking-wide text-primary mb-4">{t('legalLastUpdated')}</p>
@@ -141,12 +150,14 @@ export default function PrivacyPolicy() {
           </Card>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center" style={{ marginBottom: '2rem' }}>
           <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link to="/">{t('legalBackHome')}</Link>
           </Button>
         </div>
       </div>
+
+      <Footer />
     </main>
   );
 }
