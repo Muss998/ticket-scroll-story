@@ -92,6 +92,16 @@ const resources = {
       contactSocialTwitter: 'Twitter',
       contactSocialLinkedIn: 'LinkedIn',
       contactSocialInstagram: 'Instagram',
+      contactFormNameRequired: 'Name is required',
+      contactFormEmailRequired: 'Email is required',
+      contactFormEmailInvalid: 'Please enter a valid email address',
+      contactFormSubjectRequired: 'Subject is required',
+      contactFormMessageRequired: 'Message is required',
+      contactFormMessageMinLength: 'Message must be at least 10 characters',
+      contactFormValidationError: 'Please fix the errors in the form',
+      contactFormSuccess: 'Message sent successfully!',
+      contactFormError: 'Failed to send message. Please try again later.',
+      contactFormSending: 'Sending...',
 
       // Legal Pages
       legalLastUpdated: 'Last updated: December 29, 2025',
@@ -279,6 +289,16 @@ const resources = {
       contactSocialTwitter: 'تويتر',
       contactSocialLinkedIn: 'لينكدإن',
       contactSocialInstagram: 'إنستغرام',
+      contactFormNameRequired: 'الاسم مطلوب',
+      contactFormEmailRequired: 'البريد الإلكتروني مطلوب',
+      contactFormEmailInvalid: 'الرجاء إدخال بريد إلكتروني صالح',
+      contactFormSubjectRequired: 'الموضوع مطلوب',
+      contactFormMessageRequired: 'الرسالة مطلوبة',
+      contactFormMessageMinLength: 'الرسالة يجب أن تكون على الأقل 10 أحرف',
+      contactFormValidationError: 'الرجاء إصلاح الأخطاء في النموذج',
+      contactFormSuccess: 'تم إرسال الرسالة بنجاح!',
+      contactFormError: 'فشل إرسال الرسالة. الرجاء المحاولة مرة أخرى لاحقًا.',
+      contactFormSending: 'يتم الإرسال...',
 
       // Legal Pages
       legalLastUpdated: 'آخر تحديث: 29 ديسمبر 2025',
