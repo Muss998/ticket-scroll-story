@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 const DEFINITION_KEYS = [
   'privacyDefinitionsPlatform',
-  'privacyDefinitionsCompany',
+  // 'privacyDefinitionsCompany',
   'privacyDefinitionsUser',
   'privacyDefinitionsVenue',
   'privacyDefinitionsBooking',
@@ -32,7 +32,7 @@ const USAGE_KEYS = [
 ] as const;
 
 const SHARING_KEYS = [
-  'privacySharingPayments',
+  // 'privacySharingPayments',
   'privacySharingCloud',
   'privacySharingVenues',
   'privacySharingAuthorities'
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
         </div>
       </div>
 
-      <Footer />
+      <Footer parentPage="PrivacyPolicy" />
     </main>
   );
 }
