@@ -38,7 +38,7 @@ export default function TermsConditions() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-background to-primary/5 py-24" style={{ paddingBottom: 0 }}>
-      <Navigation parentPage="PrivacyPolicy" />
+      <Navigation parentPage="TermsConditions" />
 
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center max-w-3xl mx-auto">
@@ -96,7 +96,7 @@ export default function TermsConditions() {
         </div>
       </div>
 
-      <Footer />
+      <Footer parentPage="TermsConditions" />
     </main>
   );
 }

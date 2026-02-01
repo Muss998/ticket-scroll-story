@@ -50,7 +50,7 @@ export default function LandingPage() {
       <DownloadSection />
       <ContactSection />
       <JoinSection />
-      <Footer />
+      <Footer parentPage="Home" />
     </div>
   );
 }
