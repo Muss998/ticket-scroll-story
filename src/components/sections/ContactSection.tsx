@@ -175,7 +175,7 @@ export function ContactSection() {
     }
   ];
 
-  const socialPlatforms = ['contactSocialTwitter', 'contactSocialLinkedIn', 'contactSocialInstagram'] as const;
+  const socialPlatforms = ['contactSocialFacebook', 'contactSocialInstagram', 'contactSocialTwitter', 'contactSocialLinkedIn'] as const;
 
   return (
     <section id="contact" ref={sectionRef} className="py-24 bg-gradient-to-br from-primary/5 to-background relative overflow-hidden">

@@ -53,7 +53,7 @@ export function DownloadSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* App Store */}
-            <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-card/50 backdrop-blur-sm">
+            {/* <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-card/50 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-primary p-4 shadow-glow group-hover:scale-110 transition-transform">
                   <Apple className="w-8 h-8 text-white" />
@@ -63,7 +63,7 @@ export function DownloadSection() {
                   {t('downloadIOSButton')}
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Google Play */}
             <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-card/50 backdrop-blur-sm">
@@ -94,7 +94,7 @@ export function DownloadSection() {
           </div>
 
           <p className="text-lg text-muted-foreground">
-            <span className="text-primary font-semibold">{t('availableOn')}</span> iOS 14+ and Android 8+
+            <span className="text-primary font-semibold">{t('availableOn')}</span> Android 8+
           </p>
         </div>
       </div>
